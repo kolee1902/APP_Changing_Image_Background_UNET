@@ -1,4 +1,4 @@
-# CSC14116 - Changing Image Background using U-Net
+# CSC14116 – Applied Parallel Programming - Changing Image Background using U-Net
 
 ## 📌 Introduction
 
