@@ -1,10 +1,3 @@
-Perfect 👌 Thanks for sharing the **Table of Contents** screenshots from your notebook.
-I can now structure the **README.md** so it matches your project report more closely.
-
-Here’s a refined version that aligns with your notebook sections:
-
----
-
 # CSC14116 - Changing Image Background using U-Net
 
 ## 📌 Introduction
