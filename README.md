@@ -1,42 +1,86 @@
-# Background Changing with U-Net
+Perfect 👌 Thanks for sharing the **Table of Contents** screenshots from your notebook.
+I can now structure the **README.md** so it matches your project report more closely.
+
+Here’s a refined version that aligns with your notebook sections:
+
+---
+
+# CSC14116 - Changing Image Background using U-Net
 
 ## 📌 Introduction
 
-This project applies a **U-Net model** for background segmentation and replacement. By training the U-Net architecture on image data, the model can accurately distinguish foreground objects from the background, allowing us to replace or modify the background in images.
-
-The purpose of this project is to demonstrate the power of deep learning in **image segmentation** and **computer vision** applications, with a focus on practical background changing.
+This project applies the **U-Net model** to change image backgrounds by segmenting the foreground object and replacing the background. The work explores both **sequential** and **parallel implementations** to evaluate model performance in terms of **accuracy** and **execution time**.
 
 ---
 
-## ⚙️ Installation & Requirements
+## 📂 Project Framework
 
-To run the notebook, make sure you have the following dependencies installed:
-
-```bash
-pip install tensorflow keras numpy matplotlib opencv-python
-```
-
-You can also open the notebook in **Google Colab** for easier GPU support.
+* **Framework Project**: U-Net-based image segmentation
+* **Approach**: Sequential → Parallel implementation
+* **Evaluation**: Accuracy and runtime performance
 
 ---
 
-## 🚀 Usage
+## 🛠️ Approach
 
-1. Open the provided Jupyter Notebook (`.ipynb`).
-2. Prepare your dataset (images for training/testing).
-3. Run the notebook cells step by step to:
+1. **Reference Model**: Introduce the baseline segmentation model for comparison.
 
-   * Preprocess the images.
-   * Train the U-Net model.
-   * Test background removal and replacement.
-4. Replace the background with any custom image of your choice.
+2. **Version 1 – Sequential Setup**:
+
+   * **Design**: Architecture with convolutional, pooling, and activation layers.
+   * **Implementation**: Added required libraries and drive connection.
+   * **Layers used**:
+
+     * Activation (`relu`, `sigmoid`)
+     * MaxPool2D
+     * Conv2D
+     * Conv2D Transpose
+
+3. **U-Net Model**: Build and train the U-Net for segmentation.
+
+4. **Background Replacement**: Apply the trained model to replace the background of images.
+
+5. **Model Evaluation**:
+
+   * Accuracy
+   * Execution Time
+
+6. **Parallel Implementation**:
+
+   * **Design**: Optimize kernel usage and GPU parallelization.
+   * **Analysis**: Compare sequential vs parallel.
 
 ---
 
 ## 📊 Results
 
-The model is capable of detecting foreground objects and replacing the background.
-(👉 You can add some example images here later to demonstrate before/after results.)
+* **Accuracy**: Evaluated using reference metrics.
+* **Runtime**: Compared sequential vs parallel execution to highlight speedup.
+* **Background Replacement Demo**: Successfully applied on sample images.
+| Original Image | Background Removed | Background Replaced |
+|----------------|--------------------|----------------------|
+| ![Original](images/zoom5.jpg) | ![Removed](images/ver_1.jpg) | ![Replaced](images/ver_1_bg.jpg) |
+
+
+
+---
+
+## ⚙️ Installation & Requirements
+
+```bash
+pip install tensorflow keras numpy matplotlib opencv-python
+```
+
+Run the notebook on **Google Colab** (recommended for GPU acceleration).
+
+---
+
+## 🚀 Usage
+
+1. Upload the notebook to Google Colab or Jupyter Notebook.
+2. Connect to runtime and install dependencies.
+3. Train the U-Net model using sample dataset.
+4. Run background replacement on test images.
 
 ---
 
@@ -52,7 +96,7 @@ The model is capable of detecting foreground objects and replacing the backgroun
 ## 📖 References
 
 * [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
-* TensorFlow & Keras official documentation
+* TensorFlow & Keras Documentation
 
 ---
 
@@ -63,4 +107,3 @@ MIT License
 
 Copyright (c) 2025 Doan Ngoc Mai and Le Nguyen Kieu Oanh
 ```
-
