@@ -52,16 +52,15 @@ This project applies the **U-Net model** to change image backgrounds by segmenti
 
 ---
 
-## 📊 Results
+## 📊 Results  
 
-* **Accuracy**: Evaluated using reference metrics.
-* **Runtime**: Compared sequential vs parallel execution to highlight speedup.
-* **Background Replacement Demo**: Successfully applied on sample images.
+- **Accuracy**: Evaluated using reference metrics.  
+- **Runtime**: Compared sequential vs parallel execution to highlight speedup.  
+- **Background Replacement Demo**: Successfully applied on sample images.  
+
 | Original Image | Background Removed | Background Replaced |
 |----------------|--------------------|----------------------|
 | ![Original](images/zoom5.jpg) | ![Removed](images/ver_1.jpg) | ![Replaced](images/ver_1_bg.jpg) |
-
-
 
 ---
 
